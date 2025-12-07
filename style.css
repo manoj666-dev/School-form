@@ -1,0 +1,157 @@
+/* ====== GLOBAL STYLE ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #dbeafe, #eff6ff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  color: #1e3a8a;
+}
+
+/* ====== FORM HEADER ====== */
+h1 {
+  text-align: center;
+  color: #1e40af;
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== FORM CONTAINER ====== */
+form {
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+form:hover {
+  transform: scale(1.01);
+}
+
+/* ====== INPUT FIELDS ====== */
+div {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1.8px solid #93c5fd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  background-color: #f8fafc; /* ✅ light background like inputs */
+  transition: 0.3s ease;
+}
+
+
+input:focus,
+select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
+}
+
+/* ====== RADIO & CHECKBOX ====== */
+p {
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 8px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #2563eb;
+  margin-right: 5px;
+}
+
+/* ====== SUBMIT BUTTON ====== */
+button {
+  width: 100%;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+  transform: scale(1.02);
+}
+
+/* ====== COMPLETION MESSAGE ====== */
+#completion-message {
+  display: none;
+  margin-top: 40px;
+  background: linear-gradient(135deg, #f3f3f5, #6584da);
+  color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(10, 17, 41, 0.993);
+  text-align: center;
+}
+
+#completion-message h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+#completion-message button {
+  background: white;
+  color: #1e3a8a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#completion-message button:hover {
+  background: #f3f4f6;
+  transform: scale(1.05);
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
